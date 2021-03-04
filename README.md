@@ -1,7 +1,7 @@
 # A Flutter Development Roadmap
 by [Robert Henley](https://www.linkedin.com/in/robertallenhenley/)
 
-After completing the "Complete 2020 Flutter Development Bookcamp" from The App Brewery, I found myself lost. There was a lot of Flutter documentation, videos, and other resources. I was not sure where to go next. I was one of a couple of people to raise this issue at the FlutterLDN/Flutter Berlin joint meetup in May 2020, but no one had an answer.
+After completing the [Complete 2020 Flutter Development Bookcamp](https://www.udemy.com/course/flutter-bootcamp-with-dart/) from [The App Brewery](https://www.appbrewery.co/), I found myself lost. There was a lot of Flutter documentation, videos, and other resources. I was not sure where to go next. I was one of a couple of people to raise this issue at the FlutterLDN/Flutter Berlin joint meetup in May 2020, but no one had an answer.
 
 Serendipity struck that night when I found Oleksandr Leuschenko's (@olexale) [Highly Subjective Roadmap to Flutter Development](https://github.com/olexale/flutter_roadmap) on [Awesome Flutter](https://github.com/Solido/awesome-flutter). That roadmap let me assess where I was on my journey toward professional Flutter development.
 
@@ -28,26 +28,29 @@ Over time, I found that I had my own ideas about the topic. So here is my versio
   * Git (helpful)
   * DartPad (optional)
 
-  The App Brewery course covers development environment setup well, including iOS, but not including git. They show how to get starting by pulling projects from Github, but not the important source code control issues like branching, committing, pull requests, and merging. Seek that knowledge elsewhere, because it will be required in a professional job -- and even on your side projects, knowing you have the safety of saved code versions helps.
+  The [App Brewery course](https://www.udemy.com/course/flutter-bootcamp-with-dart/) covers development environment setup well, including iOS, but not including git. They show how to get starting by pulling projects from Github, but not the important source code control issues like branching, committing, pull requests, and merging. Seek that knowledge elsewhere, because it will be required in a professional job -- and even on your side projects, knowing you have the safety of saved code versions helps.
 
-  DartPad is also a useful tool to know about. Whether you use it or not depends on your needs, but most video courses will introduce you to it when demonstrating Dart language concepts.
+  [DartPad](https://dartpad.dev/) is also a useful tool to know about. Whether you use it or not depends on your needs, but most video courses will introduce you to it when demonstrating Dart language concepts.
 
 
 * **The Dart Language**
   * Dart basics: expressions, data types, identifiers and assignment, conditionals, basic looping. (required)
   * Objects: classes, properties, constructors, methods, and simple inheritance (required)
   * Functions: function declarations, positional parameters, named parameters, return values, callbacks (required)
-  * Code Style (required)
-  * Static analysis and linters, e.g. extra\_pedantic package (eventually required)
+  * Null safety (eventually required)
+  * Code style (required)
+  * Static analysis and linters, e.g. [extra\_pedantic](https://pub.dev/packages/extra_pedantic) package (eventually required)
   * Essential Dart Libraries: dart:core and dart:math (eventually required)
 
-  This is the level of Dart knowledge that you'll get from a chapter in a Flutter introductory book, and it's all you'll need to get going. The AppBrewery course introduces Dart language feature as they are needed for the sample applications being constructed and it will take you to the minimum level necessary. So would _Flutter in Action_.
+  This is the level of Dart knowledge that you'll get from a chapter in a Flutter introductory book, and it's all you'll need to get going. The [App Brewery course](https://www.udemy.com/course/flutter-bootcamp-with-dart/) introduces Dart language feature as they are needed for the sample applications being constructed and it will take you to the minimum level necessary. So would [_Flutter in Action_](https://www.manning.com/books/flutter-in-action).
   
-  The "Effective Dart" section of the Flutter docs is your best resource about coding style. The IDEs will also help you adopt common coding conventions with warnings. You can enhance those warnings greatly with static analysis packages like extra\_pedantic.
+  Null safety in Dart is newer, but it is available in Flutter 2 as of March 3, 2021, and it is _essential_ to learn it; although, it's not taught in the introductory books or video courses as of this writing. See [Null safety in Flutter](https://flutter.dev/docs/null-safety).
+  
+  The [Effective Dart](https://dart.dev/guides/language/effective-dart) section of the Flutter docs is your best resource about coding style. The IDEs will also help you adopt common coding conventions with warnings. You can enhance those warnings greatly with static analysis packages like [extra\_pedantic](https://pub.dev/packages/extra_pedantic).
 
   You also need to know some basic Dart library methods. But you don't yet need to know deep Object-Oriented Programming or Functional Programming practices at this stage -- they will come along later.
 
-You're now ready to learn Flutter.
+There will be more Dart to learn later, but you're now ready to learn Flutter.
 
 ## Basic Flutter
 
@@ -58,13 +61,13 @@ You're now ready to learn Flutter.
   * Application assets (required)
   * Fonts (helpful)
   * Cupertino Widgets (helpful)
-  * Material Design and Apple Mobile Human Interface Guidelines (eventually required)
+  * [Material Design](https://material.io/design) and [Apple Mobile Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/) (eventually required)
 
-  Flutter is all about widgets. The most used widgets in one survey were: Text, Container, Padding, Column, Icon, Row, SizedBox, Center, Expanded, and Scaffold. Those, plus StatelessWidget, StatefulWidget, and MaterialApp are a bare minimum. Learning the Icon widget also means you need to know about app assets, and font handling for Text is helpful. The AppBrewery class covers those and more; it even gives an introduction to the Cupertino widgets. But to learn many more widgets, watch the [Widget of the Week](https://bit.ly/2Njce4W) videos from the Flutter team and explore Material Design.
+  Flutter is all about widgets. The most used widgets in one survey were: Text, Container, Padding, Column, Icon, Row, SizedBox, Center, Expanded, and Scaffold. Those, plus StatelessWidget, StatefulWidget, and MaterialApp are a bare minimum. Learning the Icon widget also means you need to know about app assets, and font handling for Text is helpful. The [App Brewery class](https://www.udemy.com/course/flutter-bootcamp-with-dart/) covers those and more; it even gives an introduction to the Cupertino widgets. But to learn many more widgets, watch the [Widget of the Week](https://bit.ly/2Njce4W) videos from the Flutter team and explore [Material Design](https://material.io/design).
   
   
 * **Basic Package Management**
-  * Pub and pub.dev (required)
+  * Pub and [pub.dev](https://pub.dev/) (required)
   * pubspec.yaml (required)
   * Popular libraries and plug-ins (helpful)
 
@@ -76,16 +79,16 @@ You're now ready to learn Flutter.
   * Lifting State Up pattern (required)
   * Provider package (required)
 
-  The App Brewery full course has you covered here. See also the video ["Pragmatic State Management in Flutter"](https://www.youtube.com/watch?v=d_m5csmrf7I) from Google I/O 2019. Alternative state management approaches are discussed below, because they take a more holistic view of application architecture.
+  The [App Brewery full course](https://www.udemy.com/course/flutter-bootcamp-with-dart/) has you covered here. See also the video ["Pragmatic State Management in Flutter"](https://www.youtube.com/watch?v=d_m5csmrf7I) from Google I/O 2019. Alternative state management approaches are discussed below, because they take a more holistic view of application architecture.
 
 
 * **Multi-Page Applications**
   * Routing 1.0 (required)
-  * Routing 2.0 and wrappers like the flow\_builder package (helpful -- required in some cases)
-  * Code generation-based routing, e.g. the auto\_route package (helpful)
+  * Routing 2.0 and wrappers like the [flow\_builder](https://pub.dev/packages/flow_builder) package (helpful -- required in some cases)
+  * Code generation-based routing, e.g. the [auto\_route](https://pub.dev/packages/auto_route) package (helpful)
   * Hero animations (helpful)
 
-  Moving beyond a single page is a key step in application organization. The AppBrewery course covers the Routing 1.0 methods, but not Routing 2.0, which is newer and more complex. Look into the Routing 2.0 wrapper packages that are emerging, like flow\_builder, or code-generating alternatives like auto\_route. And "hero animations" are a useful page transition technique.
+  Moving beyond a single page is a key step in application organization. The [App Brewery course](https://www.udemy.com/course/flutter-bootcamp-with-dart/) covers the Routing 1.0 methods, but not Routing 2.0, which is newer and more complex. Look into the Routing 2.0 wrapper packages that are emerging, like [flow\_builder](https://pub.dev/packages/flow_builder), or code-generating alternatives like [auto\_route](https://pub.dev/packages/auto_route). And [Hero animations](https://flutter.dev/docs/development/ui/animations/hero-animations) are a useful page transition technique.
 
 By this point, you can create basic Flutter applications. Now move on to learn the tools for creating more sophisticated applications.
 
@@ -96,11 +99,11 @@ By this point, you can create basic Flutter applications. Now move on to learn t
   * HTTP client-server concepts and the http package (required)
   * JSON parsing and serialization: the dart:convert library (required)
   * RESTful API concepts (helpful)
-  * Advanced http packages: dio (helpful)
-  * Code-generation-based packages for networking: retrofit for Dart (uses dio and json\_serializable) (helpful) 
-  * GraphQL concepts and the flutter\_graphql package (optional)
+  * Advanced http packages: [dio](https://pub.dev/packages/dio) (helpful)
+  * Code-generation-based packages for networking: [retrofit for Dart](https://pub.dev/packages/retrofit) (uses [dio](https://pub.dev/packages/dio) and [json\_serializable](https://pub.dev/packages/json_serializable)) (helpful) 
+  * [GraphQL](https://graphql.org/) concepts and the [graphql_flutter](https://pub.dev/packages/graphql_flutter) package (optional)
 
-  The App Brewery course (and most books) covers the must-haves for Networking. As you go deeper, you'll want to understand how Representational State Transfer (REST) works, more advanced networking (like interceptors and transformers), and how to handle code-generation-based packages. Later, you can learn how GraphQL provides an alternative to REST.
+  The [App Brewery course](https://www.udemy.com/course/flutter-bootcamp-with-dart/) (and most books) covers the must-haves for networking. As you go deeper, you'll want to understand how [Representational State Transfer (REST)](https://en.wikipedia.org/wiki/Representational_state_transfer) works, more advanced networking (like interceptors and transformers), and how to handle code-generation-based packages. Later, you can learn how [GraphQL](https://graphql.org/) provides an alternative to REST.
 
 
 * **Intermediate User Interfaces**
@@ -108,78 +111,78 @@ By this point, you can create basic Flutter applications. Now move on to learn t
   * Displaying lists: Dart Streams, StreamBuilder, and ListView (required)
   * Responsive UI: Change layout by display size
       * MediaQueryData display parameters (required)
-      * responsive\_builder or responsive\_framework (helpful)
+      * [responsive\_builder](https://pub.dev/packages/responsive_builder) or [responsive\_framework](https://pub.dev/packages/responsive_framework) (helpful)
   * Adaptive UI: Show Material widgets on Android and Cupertino widgets on iOS
-      * flutter\_platform\_widgets (helpful)
+      * [flutter\_platform\_widgets](https://pub.dev/packages/flutter_platform_widgets) (helpful)
   * Animations
       * Implicit animations (required)
       * Transition animations (required)
       * Explicit animations (helpful)
       * Staggered animations (helpful)
       * Animation accessibility: when, how, and why not to animate (helpful)
-      * Lottie (optional)
-      * Rive (optional)
+      * [Lottie](https://pub.dev/packages/lottie) (optional)
+      * [Rive](https://rive.app/) (optional)
 
   Learning how layouts actually work is critical, and the [Understanding Constraints](https://flutter.dev/docs/development/ui/layout/constraints) documentation covers it best.
   
   Most user interfaces also need lists, which are driven by Dart Streams. Most books and courses cover this.
   
-  More professional apps should also adapt to the display they run onto and probably should adapt to the platform as well. But you won't find much about this in introductory courses or books. At least learn about MediaQueryData.
+  More professional apps should also adapt to the display they run onto and probably should adapt to the platform as well. But you won't find much about this in introductory courses or books. At least learn about [MediaQueryData](https://api.flutter.dev/flutter/widgets/MediaQueryData-class.html).
   
-  Animations are also helpful for some applications -- and you need to know how MediaQueryData tells your app not to animate, as well as how flashing, blinking, and parallax motion can harm users. Most Flutter books and video courses cover animation, except animation accessibility.
+  [Animations](https://flutter.dev/docs/development/ui/animations) are also helpful for some applications -- and you need to know how MediaQueryData.disableAnimations tells your app not to animate, as well as [how flashing, blinking, and parallax motion can harm users](https://www.smashingmagazine.com/2018/04/designing-accessibility-inclusion/#lens-animation-effects). Most Flutter books and video courses cover animation, except animation accessibility.
   
   
 * **Simple Persistence**
-  * Serializers: dart:convert library for non-JSON data (required)
-  * Files: path\_provider and dart:io (required)
-  * Local storage: the localstorage plugin (required)
-  * Code-generation-based serialization: the built\_value package (helpful)
-  * Keychain and Keystore: the flutter\_keychain package (optional)
+  * Serializers: [dart:convert](https://api.dart.dev/stable/2.10.5/dart-convert/dart-convert-library.html) library for non-JSON data (required)
+  * Files: [path\_provider](https://pub.dev/packages/path_provider) and dart:io (required)
+  * Local storage: the [localstorage](https://pub.dev/packages/localstorage) plugin (required)
+  * Code-generation-based serialization: the [built\_value](https://pub.dev/packages/built_value) package (helpful)
+  * Keychain and Keystore: the [flutter\_keychain](https://pub.dev/packages/flutter_keychain) package (optional)
 
   When you just need to store simple data, use the simplest storage solution possible.
 
 
 * **Authentication**
-  * Firebase Auth (required)
-  * Google Sign In and google\_sign\_in package (helpful)
+  * Firebase Auth and [firebase\_auth](https://pub.dev/packages/firebase_auth) package (required)
+  * Google Sign In and [google\_sign\_in](https://pub.dev/packages/google_sign_in) package (helpful)
   * Sign In with Apple (eventually required)
   * Facebook sign in (optional)
   * Local market authentication providers (optional, but critical in some markets)
 
-  Most apps have some sort of sign-in system: some based on id and password, others based on more complex server interactions. Mostly, Firebase Auth has your back here, and the App Brewery course covers it lightly, but in some cases you want more specific forms of authentication. Look for appropriate packages on [pub.dev](https://pub.dev). Know your user base: some less-obvious authentication providers are necessary in local markets, such as LINE Login in Japan. Also, Sign In with Apple is required for iOS apps that use other social login systems.
+  Most apps have some sort of sign-in system: some based on id and password, others based on more complex server interactions. Mostly, Firebase Auth has your back here, and the [App Brewery course](https://www.udemy.com/course/flutter-bootcamp-with-dart/) covers it lightly, but in some cases you want more specific forms of authentication. Look for appropriate packages on [pub.dev](https://pub.dev). Know your user base: some less-obvious authentication providers are necessary in local markets, such as LINE Login in Japan ([flutter\_line\_login](https://pub.dev/packages/flutter_line_login)). Also, Sign In with Apple is required for iOS apps that use other social login systems.
 
 
 * **Database**
   * Firebase Firestore (required)
-  * Relational databases: SQLite with sqflite package (required)
-  * NoSQL databases: hive package (helpful)
-  * Moor (optional)
+  * Relational databases: SQLite with [sqflite](https://pub.dev/packages/sqflite) package (required)
+  * NoSQL databases: [hive](https://pub.dev/packages/hive) package (helpful)
+  * [Moor](https://pub.dev/packages/moor) (optional)
 
-  When your data storage requirements are larger, more complex, or more structured, use a database. The App Brewery course covers Firebase Firestore, which is a service, but client-local databases are also available.
+  When your data storage requirements are larger, more complex, or more structured, use a database. The [App Brewery course](https://www.udemy.com/course/flutter-bootcamp-with-dart/) covers Firebase Firestore, which is a service, but client-local databases are also available.
 
 
 * **Application Architecture -- Seperation of Concerns**
-  * Business Logic Component (BLoC) pattern and flutter\_bloc package (required)
-  * Dependency Injection: get\_it and injectable packages (required)
-  * Immutability and Unidirectional Data Flow: the freezed package (helpful)
+  * Business Logic Component (BLoC) pattern and [flutter\_bloc](https://pub.dev/packages/flutter_bloc) package (required)
+  * Dependency Injection: [get\_it](https://pub.dev/packages/get_it) and [injectable](https://pub.dev/packages/injectable) packages (required)
+  * Immutability and Unidirectional Data Flow: the [freezed](https://pub.dev/packages/freezed) package (helpful)
   * Design Patterns and Clean Architecture (helpful)
-  * Redux (optional)
-  * MobX (optional)
+  * [Redux](https://pub.dev/packages/redux) (optional)
+  * [MobX](https://pub.dev/packages/mobx) (optional)
   * MV* architecture patterns: MVC, MVP, MVVM, etc. (optional)
 
-  This is where apps start to get serious: these techniques separate larger apps into maintainable pieces. This is also the point where the ideas from books like _Design Patterns_ and _Clean Code_ / _Clean Architecture_ begin to come into play. You won't find this in introductory courses. Some of these topics are covered by [@resocoder's YouTube videos](https://www.youtube.com/c/ResoCoder). The BloC pattern is recommended by Google, especially in conjunction with the Provider state management package. (_Flutter: An Hands-On Guide to App Development_ has a good write-up of BLoC.) Redux and MobX come out of the React web community and remain popular and powerful, so although using them is optional, it's good to know what they are and what they can do. Ditto the MV* architectures: while they are less used in Flutter, people talk about them often as points of comparison.
+  This is where apps start to get serious: these techniques separate larger apps into maintainable pieces. This is also the point where the ideas from books like [_Design Patterns_](https://www.pearson.com/us/higher-education/program/Gamma-Design-Patterns-Elements-of-Reusable-Object-Oriented-Software/PGM14333.html) and [_Clean Code_](https://www.pearson.com/us/higher-education/program/Martin-Clean-Code-A-Handbook-of-Agile-Software-Craftsmanship/PGM63937.html) / [_Clean Architecture_](https://www.pearson.com/us/higher-education/program/Martin-Clean-Architecture-A-Craftsman-s-Guide-to-Software-Structure-and-Design/PGM333762.html) begin to come into play. You won't find this in introductory courses. Some of these topics are covered by [@resocoder's YouTube videos](https://www.youtube.com/c/ResoCoder). The BloC pattern is recommended by Google, especially in conjunction with the Provider state management package. (I liked WKCD's video series [BLoC - from zero to HERO](https://www.youtube.com/watch?v=w6XWjpBK4W8&list=PLptHs0ZDJKt_T-oNj_6Q98v-tBnVf-S_o&index=2) for training.) [Redux](https://pub.dev/packages/redux) and [MobX](https://pub.dev/packages/mobx) come out of the React web community and remain popular and powerful, so although using them is optional, it's good to know what they are and what they can do. Ditto the MV* architectures: while they are less used in Flutter, people talk about them often as points of comparison.
 
 
 * **Testing**
   * Unit Testing (required)
-  * Mock Objects and the mockito package (required)
+  * Mock Objects and the [mockito](https://pub.dev/packages/mockito) package (required)
   * Widget Testing (required)
-  * On-device testing with flutter\_driver package (required)
-  * Integration testing with integration\_test package (required)
-  * Behavior-Driven Development (BDD) and the gherkin package (for Dart), and/or the bdd\_widget\_test or flutter\_gherkin packages (for Flutter) (helpful)
+  * On-device testing with [flutter\_driver](https://api.flutter.dev/flutter/flutter_driver/flutter_driver-library.html) (required)
+  * [Integration testing](https://flutter.dev/docs/cookbook/testing/integration/introduction) with [integration\_test](https://pub.dev/packages/integration_test) package (required)
+  * Behavior-Driven Development (BDD) and the [gherkin](https://pub.dev/packages/gherkin) package (for Dart), and/or the [bdd\_widget\_test](https://pub.dev/packages/bdd_widget_test) or [flutter\_gherkin](https://pub.dev/packages/flutter_gherkin) packages (for Flutter) (helpful)
   *	 Test-Driven Development (TDD) (helpful)
 
-  The subject of testing is critical, and could easily be introduced earlier in training -- right after basic Dart, in fact. But that's not how most courses are structured, and it does help to have architectural patterns that seperate concerns in place first, because they make the app more testable. _Flutter in Action_ covers testing somewhat. The integration\_test package is new; see [Updates on Flutter Testing](https://medium.com/flutter/updates-on-flutter-testing-f54aa9f74c7e).
+  The subject of testing is critical, and could easily be introduced earlier in training -- right after basic Dart, in fact. But that's not how most courses are structured, and it does help to have architectural patterns that seperate concerns in place first, because they make the app more testable. [_Flutter in Action_](https://www.manning.com/books/flutter-in-action) covers testing somewhat. The integration\_test package is new; see [Updates on Flutter Testing](https://medium.com/flutter/updates-on-flutter-testing-f54aa9f74c7e).
 
 You can now build complex Flutters applications, but not quite professional-grade ones.
 
@@ -188,32 +191,35 @@ You can now build complex Flutters applications, but not quite professional-grad
 * **Advanced User Interfaces**
   * The widget lifecycle (required)
   * Element Tree and RenderObject (required)
-  * Internationalization and Localization
+  * [Internationalization and Localization](https://flutter.dev/docs/development/accessibility-and-localization/internationalization)
       * flutter\_localization, \*App.localizationDelegates and .supportedLocales (required)
-      * Intl package (required)
-      * easy\_localization (helpful)
+      * [Intl](https://pub.dev/packages/intl) package (required)
+      * [easy\_localization](https://pub.dev/packages/easy_localization) (helpful)
       * Localization services and automation (optional)
-  * Accessibility: Allow assistive technologies like TalkBack and VoiceOver or an external keyboard/switch device to present and operate your app to people with disabilities
+  * [Accessibility](https://flutter.dev/docs/development/accessibility-and-localization/accessibility): Allow assistive technologies like TalkBack and VoiceOver or an external keyboard/switch device to present and operate your app to people with disabilities
       * semanticLabel and excludeFromSemantics attributes (required)
-      * Semantics widget (required)
-      * SemanticsService.announce() (required)
-      * MediaQueryData accessibility flags (eventually required)
-      * Android Accessibility Analyzer and iOS Accessibility Inspector (helpful)
+      * [Semantics](https://api.flutter.dev/flutter/widgets/Semantics-class.html) widget (required)
+      * [SemanticsService.announce()](https://api.flutter.dev/flutter/semantics/SemanticsService/announce.html) (required)
+      * [MediaQueryData](https://api.flutter.dev/flutter/widgets/MediaQueryData-class.html) accessibility flags (eventually required)
+      * Android [Accessibility Scanner](https://developer.android.com/guide/topics/ui/accessibility/testing#accessibility-scanner) and iOS [Accessibility Inspector](https://developer.apple.com/library/archive/documentation/Accessibility/Conceptual/AccessibilityMacOSX/OSXAXTestingApps.html) (helpful)
       * Manual accessibility testing (helpful)
   * Custom Painting (helpful)
 
-  There's a lot more than widgets to a complex user interface. _Flutter in Action_ covers the widget lifecycle, the Render tree, accessibility, and custom painting. Internationalization is covered in the Flutter docs.
+  There's a lot more than widgets to a complex user interface. [_Flutter in Action_](https://www.manning.com/books/flutter-in-action) covers the widget lifecycle, the Render tree, accessibility, and custom painting. 
+  
+  Internationalization is covered in the [Flutter docs](https://flutter.dev/docs/development/accessibility-and-localization/internationalization). 
+  
+  Digital accessibility for the disabled is a large topic in itself, but it's both the right thing to do and a legal requirement for apps in major markets. Accessibility is most often taught for the web; start with this [W3C introductory course](https://www.edx.org/course/web-accessibility-introduction) for background, then apply what you've learned using these [Flutter docs](https://flutter.dev/docs/development/accessibility-and-localization/accessibility). This list of [accessibility guideline suggestions](https://theappbusiness.github.io/accessibility-guidelines/) may help, as it includes guidance for Flutter, but it's incomplete.
 
 
 * **Advanced Dart**
-  * Null Safety (required)
-  * Isolates (required)
+  * Dart Isolates (required)
   * Modules and Libraries (helpful)
   * Intermediate to advanced Object-Oriented Programming (OOP) (helpful)
-  * More Design Patterns and Design Principles: Gang of Four, SOLID, DRY, ... (helpful)
+  * More Design Patterns and Design Principles: [Gang of Four](https://en.wikipedia.org/wiki/Design_Patterns), [SOLID](https://en.wikipedia.org/wiki/SOLID), [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself), ... (helpful)
   * Functional Programming (FP) (optional)
 
-  Null safety is critical for robust programming, but new to Dart -- or I would have listed it at the beginning. Dart Isolates allow true parallel execution of code, which is great for large computations. How Dart code can be modularized and placed in independent libraries will help simplify your projects. More advanced OOP, Design Patterns, and Design Principles become even more relevant at this level of complexity: look especially at SOLID to be sure your class hierarchies make sense and DRY to make sure your methods are small and well-structured. With Functional Programming, the discipline of using only immutable objects is elevated to high art with the introduction of higher-order functions, which are genuine power tools of abstract coding.
+  Dart Isolates allow true parallel execution of code, which is great for large computations. Knowing how Dart code can be modularized and placed in independent libraries will help simplify larger projects. More advanced OOP, Design Patterns, and Design Principles become relevant at this level of complexity: look especially at [SOLID](https://en.wikipedia.org/wiki/SOLID) to be sure your class hierarchies make sense and [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) to make sure your methods are small and well-structured. With Functional Programming, the discipline of using only immutable objects is elevated to high art with the introduction of higher-order functions, which are genuine power tools of abstract coding.
 
 
 * **Performance Profiling**
@@ -264,8 +270,8 @@ By this point, you know enough to build professional-grade applications with Flu
 
 
 * **Stores (required)**
-  * AppStore Guidelines
-  * Google Play Store Guidelines
+  * [AppStore Guidelines](https://developer.apple.com/app-store/guidelines/)
+  * [Google Play Store Guidelines](https://play.google.com/about/developer-content-policy/)
   * App Store Connect
   * Google Dev Console
 

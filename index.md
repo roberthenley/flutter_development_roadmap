@@ -1,7 +1,3 @@
-# A Flutter Development Roadmap
-
-A detailed roadmap of Flutter development topics to learn.
-
 by [Robert Henley](https://www.linkedin.com/in/robertallenhenley/)
 
 After completing the [Complete 2020 Flutter Development Bookcamp](https://www.udemy.com/course/flutter-bootcamp-with-dart/) from [The App Brewery](https://www.appbrewery.co/), I found myself lost. There was a lot of Flutter documentation, videos, and other resources. I was not sure where to go next. I was one of a couple of people to raise this issue at the FlutterLDN/Flutter Berlin joint meetup in May 2020, but no one had an answer.

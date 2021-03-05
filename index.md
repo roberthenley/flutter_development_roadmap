@@ -95,8 +95,8 @@ By this point, you can create basic Flutter applications. Now move on to learn t
 
 * **Networking**
   * Asynchronous Dart programming: Future, async/await (required)
-  * HTTP client-server concepts and the http package (required)
-  * JSON parsing and serialization: the dart:convert library (required)
+  * HTTP client-server concepts and the [http](https://pub.dev/packages/http) package (required)
+  * JSON parsing and serialization: the [dart:convert](https://api.dart.dev/stable/2.10.5/dart-convert/dart-convert-library.html) library (required)
   * RESTful API concepts (helpful)
   * Advanced http packages: [dio](https://pub.dev/packages/dio) (helpful)
   * Code-generation-based packages for networking: [retrofit for Dart](https://pub.dev/packages/retrofit) (uses [dio](https://pub.dev/packages/dio) and [json\_serializable](https://pub.dev/packages/json_serializable)) (helpful) 
@@ -107,9 +107,9 @@ By this point, you can create basic Flutter applications. Now move on to learn t
 
 * **Intermediate User Interfaces**
   * How layouts work (required)
-  * Displaying lists: Dart Streams, StreamBuilder, and ListView (required)
+  * Displaying lists: [Dart Streams](https://api.dart.dev/stable/2.10.5/dart-async/Stream-class.html), [StreamBuilder](https://api.flutter.dev/flutter/widgets/StreamBuilder-class.html), and [ListView](https://api.flutter.dev/flutter/widgets/ListView-class.html) (required)
   * Responsive UI: Change layout by display size
-      * MediaQueryData display parameters (required)
+      * [MediaQueryData](https://api.flutter.dev/flutter/widgets/MediaQueryData-class.html) display parameters (required)
       * [responsive\_builder](https://pub.dev/packages/responsive_builder) or [responsive\_framework](https://pub.dev/packages/responsive_framework) (helpful)
   * Adaptive UI: Show Material widgets on Android and Cupertino widgets on iOS
       * [flutter\_platform\_widgets](https://pub.dev/packages/flutter_platform_widgets) (helpful)
@@ -124,7 +124,7 @@ By this point, you can create basic Flutter applications. Now move on to learn t
 
   Learning how layouts actually work is critical, and the [Understanding Constraints](https://flutter.dev/docs/development/ui/layout/constraints) documentation covers it best.
   
-  Most user interfaces also need lists, which are driven by Dart Streams. Most books and courses cover this.
+  Most user interfaces also need lists, which are driven by [Dart Streams](https://api.dart.dev/stable/2.10.5/dart-async/Stream-class.html), [StreamBuilder](https://api.flutter.dev/flutter/widgets/StreamBuilder-class.html), and [ListView](https://api.flutter.dev/flutter/widgets/ListView-class.html). Most books and courses cover this.
   
   More professional apps should also adapt to the display they run onto and probably should adapt to the platform as well. But you won't find much about this in introductory courses or books. At least learn about [MediaQueryData](https://api.flutter.dev/flutter/widgets/MediaQueryData-class.html).
   

@@ -8,6 +8,8 @@ I recommend you have a look at that roadmap; it's a beautiful infographic and th
 
 Over time, I found that I had my own ideas about the topic. So here is my version of a Flutter development roadmap. It is more detailed than the original, and at least as subjective. Please note that there is no one true path to learn Flutter, and I'm not following this roadmap in linear order myself -- I've skipped around it as various courses and activities filled in gaps. But it serves to keep me oriented as I progress, knowing what I know and what I've yet to learn. I hope it can help you find your own way.
 
+If you want to track your progress, I've created a [Flutter Development Study Checklist](https://docs.google.com/spreadsheets/d/1guOBy3n8n1-b8ro-xF3OfO-fn-oJGTaZlf0lC6_176w/edit?usp=sharing). This spreadsheet allows you to check off study topics and to rate your level of knowledge in each topic. Use `File > Make a copy` to fill in your progress.
+
 
 ## Getting Started
 
@@ -229,11 +231,27 @@ You can now build complex Flutters applications, but not quite professional-grad
 
   Sooner or later the size or speed of your app will not be what users need. Profiling tools will help you find out why and fix it. See the [Flutter Performance Docs](https://flutter.dev/docs/perf). See also Filip Hráček's [Performance Testing of Flutter Apps](https://medium.com/flutter/performance-testing-of-flutter-apps-df7669bb7df7) article and [Performance: Optimizing Your Flutter App](https://www.youtube.com/watch?v=SQcmrl_NkqY) video.
 
+* **Flutter Web** (optional)
+  * Basic HTML and JavaScript knowledge (required for this option)
+  * See [https://flutter.dev/web](https://flutter.dev/web) for setup
+  * Use only web-enabled [pub.dev](https://pub.dev) packages
+
+  Flutter web development is not greatly different from Flutter mobile app development. You will need to place a greater emphasis on responsive layouts, because web form factors differ more than pure mobile apps. Web development is actually an option from the beginning of your development journey, but there are limitations to Flutter web (e.g., no hot reload) and the relative immaturity of the technology that make me categorize it as an advanced topic.
+
+* **Flutter Desktop** (optional -- in Beta)
+  * See [https://flutter.dev/desktop](https://flutter.dev/desktop) for details
+  * Desktop platform development tools, e.g. Visual Studio for Windows, XCode for Mac, and various command line tools for Linux (required for this option)
+  * Use only [pub.dev](https://pub.dev) packages enabled for the selected desktop platform(s)
+  * Learn appropriate platform UI guidelines and accessibility standards
+
+  Flutter can also be used to create desktop native applications for Windows, Mac, and Linux. This is Beta-quality software, but available for you to play with. YMMV.
 
 * **Plug-ins** (helpful)
   * Native Platform APIs:
       * iOS and Swift
       * Android and Kotlin
+      * Web and HTML, CSS, and JavaScript
+      * Desktop OS APIs (optional)
   * Platform Channels
   * Creating and publishing libraries and plug-ins on pub.dev
 

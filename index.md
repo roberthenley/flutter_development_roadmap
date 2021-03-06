@@ -260,9 +260,10 @@ You can now build complex Flutters applications, but not quite professional-grad
       * Web and HTML, CSS, and JavaScript
       * Desktop OS APIs (optional)
   * Platform Channels
+  * Dart Foreign Function Interface (FFI) and the [ffi](https://pub.dev/packages/ffi) package
   * Creating and publishing libraries and plug-ins on pub.dev
 
-  You have already encountered packages and the [pub.dev](https://pub.dev) site. Learning how to create your own packages is valuable for large projects. And it's likely that someday you're going to have to debug a plug-in your app uses or write your own; at which point, you're going to need to know how to deal with the underlying native platform, its language(s) and API.
+  You have already encountered packages and the [pub.dev](https://pub.dev) site. Learning how to create your own packages is valuable for large projects. And it's likely that someday you're going to have to debug a plug-in your app uses or write your own; at which point, you're going to need to know how to deal with the underlying native platform, its language(s) and API. Platform Channels and Dart FFI are two ways to tie your Dart and Flutter code to that native code.
 
 
 * **Flutter Internals (optional)**

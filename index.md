@@ -167,11 +167,18 @@ By this point, you can create basic Flutter applications. Now move on to learn t
   * Dependency Injection: [get\_it](https://pub.dev/packages/get_it) and [injectable](https://pub.dev/packages/injectable) packages (required)
   * Immutability and Unidirectional Data Flow: the [freezed](https://pub.dev/packages/freezed) package (helpful)
   * Design Patterns and Clean Architecture (helpful)
+  * [Riverpod](https://pub.dev/packages/riverpod) package (helpful)
   * [Redux](https://pub.dev/packages/redux) (optional)
   * [MobX](https://pub.dev/packages/mobx) (optional)
   * MV* architecture patterns: MVC, MVP, MVVM, etc. (optional)
 
-  This is where apps start to get serious: these techniques separate larger apps into maintainable pieces. This is also the point where the ideas from books like [_Design Patterns_](https://www.pearson.com/us/higher-education/program/Gamma-Design-Patterns-Elements-of-Reusable-Object-Oriented-Software/PGM14333.html) and [_Clean Code_](https://www.pearson.com/us/higher-education/program/Martin-Clean-Code-A-Handbook-of-Agile-Software-Craftsmanship/PGM63937.html) / [_Clean Architecture_](https://www.pearson.com/us/higher-education/program/Martin-Clean-Architecture-A-Craftsman-s-Guide-to-Software-Structure-and-Design/PGM333762.html) begin to come into play. You won't find this in introductory courses. Some of these topics are covered by [@resocoder's YouTube videos](https://www.youtube.com/c/ResoCoder). The BloC pattern is recommended by Google, especially in conjunction with the Provider state management package. (I liked WKCD's video series [BLoC - from zero to HERO](https://www.youtube.com/watch?v=w6XWjpBK4W8&list=PLptHs0ZDJKt_T-oNj_6Q98v-tBnVf-S_o&index=2) for training.) [Redux](https://pub.dev/packages/redux) and [MobX](https://pub.dev/packages/mobx) come out of the React web community and remain popular and powerful, so although using them is optional, it's good to know what they are and what they can do. Ditto the MV* architectures: while they are less used in Flutter, people talk about them often as points of comparison.
+  This is where apps start to get serious: these techniques separate larger apps into maintainable pieces. This is also the point where the ideas from books like [_Design Patterns_](https://www.pearson.com/us/higher-education/program/Gamma-Design-Patterns-Elements-of-Reusable-Object-Oriented-Software/PGM14333.html) and [_Clean Code_](https://www.pearson.com/us/higher-education/program/Martin-Clean-Code-A-Handbook-of-Agile-Software-Craftsmanship/PGM63937.html) / [_Clean Architecture_](https://www.pearson.com/us/higher-education/program/Martin-Clean-Architecture-A-Craftsman-s-Guide-to-Software-Structure-and-Design/PGM333762.html) begin to come into play. You won't find this in introductory courses. Some of these topics are covered by [@resocoder's YouTube videos](https://www.youtube.com/c/ResoCoder). 
+  
+  The BloC pattern is recommended by Google, especially in conjunction with the [Provider](https://pub.dev/packages/provider) state management package. (I liked WKCD's video series [BLoC - from zero to HERO](https://www.youtube.com/watch?v=w6XWjpBK4W8&list=PLptHs0ZDJKt_T-oNj_6Q98v-tBnVf-S_o&index=2) for training.) 
+  
+  An alternative to using Provider is the [Riverpod](https://pub.dev/packages/riverpod) package from the same author, which was designed to address Provider's defects (such as type safety); it is considered an experiment, but I've heard good reports about it.
+  
+ [Redux](https://pub.dev/packages/redux) and [MobX](https://pub.dev/packages/mobx) come out of the React web community and remain popular and powerful, so although using them is optional, it's good to know what they are and what they can do. Ditto the MV* architectures: while they are less used in Flutter, people talk about them often as points of comparison.
 
 
 * **Testing**

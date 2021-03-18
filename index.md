@@ -170,6 +170,7 @@ By this point, you can create basic Flutter applications. Now move on to learn t
 * **Application Architecture -- Seperation of Concerns**
   * Business Logic Component (BLoC) pattern and [flutter\_bloc](https://pub.dev/packages/flutter_bloc) package (required)
   * Dependency Injection: [get\_it](https://pub.dev/packages/get_it) and [injectable](https://pub.dev/packages/injectable) packages (required)
+  * Comparability: the [equatable](https://pub.dev/packages/equatable) package (helpful)
   * Immutability and Unidirectional Data Flow: the [freezed](https://pub.dev/packages/freezed) package (helpful)
   * Design Patterns and Clean Architecture (helpful)
   * [Riverpod](https://pub.dev/packages/riverpod) package (helpful)

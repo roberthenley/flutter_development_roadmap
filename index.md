@@ -183,7 +183,7 @@ By this point, you can create basic Flutter applications. Now move on to learn t
   
   An alternative to using Provider is the [Riverpod](https://pub.dev/packages/riverpod) package from the same author, which was designed to address Provider's defects (such as type safety); it is considered an experiment, but I've heard good reports about it.
   
- [Redux](https://pub.dev/packages/redux) and [MobX](https://pub.dev/packages/mobx) come out of the React web community and remain popular and powerful, so although using them is optional, it's good to know what they are and what they can do. Ditto the MV* architectures: while they are less used in Flutter, people talk about them often as points of comparison.
+  [Redux](https://pub.dev/packages/redux) and [MobX](https://pub.dev/packages/mobx) come out of the React web community and remain popular and powerful, so although using them is optional, it's good to know what they are and what they can do. Ditto the MV* architectures: while they are less used in Flutter, people talk about them often as points of comparison.
 
 
 * **Testing**

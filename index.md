@@ -24,8 +24,8 @@ If you want to track your progress, I've created a [Flutter Development Study Ch
 
 * **Development Environment**
   * Android Studio or Visual Studio Code (required)
-  * Flutter Command Line Interface (CLI) (helpful)
-  * XCode and iOS emulator (helpful)
+  * Flutter Command Line Interface (CLI) (installation required; knowledge of use helpful)
+  * XCode and iOS emulator (required for iOS development; otherwise, optional, and only possible if you have a Mac)
   * Git (helpful)
   * DartPad (optional)
 
@@ -64,7 +64,11 @@ There will be more Dart to learn later, but you're now ready to learn Flutter.
   * Cupertino Widgets (helpful)
   * [Material Design](https://material.io/design) and [Apple Mobile Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/) (eventually required)
 
-  Flutter is all about widgets. The most used widgets in one survey were: Text, Container, Padding, Column, Icon, Row, SizedBox, Center, Expanded, and Scaffold. Those, plus StatelessWidget, StatefulWidget, and MaterialApp are a bare minimum. Learning the Icon widget also means you need to know about app assets, and font handling for Text is helpful. The [App Brewery class](https://www.udemy.com/course/flutter-bootcamp-with-dart/) covers those and more; it even gives an introduction to the Cupertino widgets. But to learn many more widgets, watch the [Widget of the Week](https://bit.ly/2Njce4W) videos from the Flutter team and explore [Material Design](https://material.io/design).
+  Flutter is all about widgets. The most used widgets in one survey were: [Text](https://api.flutter.dev/flutter/widgets/Text-class.html), [Container](https://api.flutter.dev/flutter/widgets/Container-class.html), [Padding](https://api.flutter.dev/flutter/widgets/Padding-class.html), [Column](https://api.flutter.dev/flutter/widgets/Column-class.html), [Icon](https://api.flutter.dev/flutter/widgets/Icon-class.html), [Row](https://api.flutter.dev/flutter/widgets/Row-class.html), [SizedBox](https://api.flutter.dev/flutter/widgets/SizedBox-class.html), [Center](https://api.flutter.dev/flutter/widgets/Center-class.html), [Expanded](https://api.flutter.dev/flutter/widgets/Expanded-class.html), and [Scaffold](https://api.flutter.dev/flutter/material/Scaffold-class.html). Those, plus [StatelessWidget](https://api.flutter.dev/flutter/widgets/StatelessWidget-class.html), [StatefulWidget](https://api.flutter.dev/flutter/widgets/StatefulWidget-class.html), and [MaterialApp](https://api.flutter.dev/flutter/material/MaterialApp-class.html) are a bare minimum. 
+  
+  Learning the Icon widget also means you need to know about app assets, and font handling for Text is helpful. 
+  
+  The [App Brewery class](https://www.udemy.com/course/flutter-bootcamp-with-dart/) covers those and more; it even gives an introduction to the Cupertino widgets. But to learn many more widgets, watch the [Widget of the Week](https://bit.ly/2Njce4W) videos from the Flutter team and explore [Material Design](https://material.io/design).
   
   
 * **Basic Package Management**
@@ -108,10 +112,11 @@ By this point, you can create basic Flutter applications. Now move on to learn t
 
 
 * **Intermediate User Interfaces**
-  * How layouts work (required)
+  * [How the layout process works for all widgets](https://flutter.dev/docs/development/ui/layout/constraints) (required)
   * Displaying lists: [Dart Streams](https://api.dart.dev/stable/2.10.5/dart-async/Stream-class.html), [StreamBuilder](https://api.flutter.dev/flutter/widgets/StreamBuilder-class.html), and [ListView](https://api.flutter.dev/flutter/widgets/ListView-class.html) (required)
   * Responsive UI: Change layout by display size
       * [MediaQueryData](https://api.flutter.dev/flutter/widgets/MediaQueryData-class.html) display parameters (required)
+      * [LayoutBuilder](https://api.flutter.dev/flutter/widgets/LayoutBuilder-class.html) (required)
       * [responsive\_builder](https://pub.dev/packages/responsive_builder) or [responsive\_framework](https://pub.dev/packages/responsive_framework) (helpful)
   * Adaptive UI: Show Material widgets on Android and Cupertino widgets on iOS
       * [flutter\_platform\_widgets](https://pub.dev/packages/flutter_platform_widgets) (helpful)
@@ -124,7 +129,7 @@ By this point, you can create basic Flutter applications. Now move on to learn t
       * [Lottie](https://pub.dev/packages/lottie) (optional)
       * [Rive](https://rive.app/) (optional)
 
-  Learning how layouts actually work is critical, and the [Understanding Constraints](https://flutter.dev/docs/development/ui/layout/constraints) documentation covers it best.
+  Learning how the layout process actually works is critical, and the [Understanding Constraints](https://flutter.dev/docs/development/ui/layout/constraints) documentation covers it best.
   
   Most user interfaces also need lists, which are driven by [Dart Streams](https://api.dart.dev/stable/2.10.5/dart-async/Stream-class.html), [StreamBuilder](https://api.flutter.dev/flutter/widgets/StreamBuilder-class.html), and [ListView](https://api.flutter.dev/flutter/widgets/ListView-class.html). Most books and courses cover this.
   
@@ -253,7 +258,7 @@ You can now build complex Flutters applications, but not quite professional-grad
 
   Flutter can also be used to create desktop native applications for Windows, Mac, and Linux. This is Beta-quality software, but available for you to play with. YMMV.
 
-* **Plug-ins** (helpful)
+* **Plug-ins** (eventually required)
   * Native Platform APIs:
       * iOS and Swift
       * Android and Kotlin

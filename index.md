@@ -133,7 +133,7 @@ By this point, you can create basic Flutter applications. Now move on to learn t
   
   Most user interfaces also need lists, which are driven by [Dart Streams](https://api.dart.dev/stable/2.10.5/dart-async/Stream-class.html), [StreamBuilder](https://api.flutter.dev/flutter/widgets/StreamBuilder-class.html), and [ListView](https://api.flutter.dev/flutter/widgets/ListView-class.html). Most books and courses cover this.
   
-  More professional apps should also adapt to the display they run onto and probably should adapt to the platform as well. But you won't find much about this in introductory courses or books. At least learn about [MediaQueryData](https://api.flutter.dev/flutter/widgets/MediaQueryData-class.html).
+  More professional apps should also adapt to the display they run on and probably should adapt to the platform as well. But you won't find much about this in introductory courses or books. At least learn about [MediaQueryData](https://api.flutter.dev/flutter/widgets/MediaQueryData-class.html) and [LayoutBuilder](https://api.flutter.dev/flutter/widgets/LayoutBuilder-class.html).
   
   [Animations](https://flutter.dev/docs/development/ui/animations) are also helpful for some applications -- and you need to know how MediaQueryData.disableAnimations tells your app not to animate, as well as [how flashing, blinking, and parallax motion can harm users](https://www.smashingmagazine.com/2018/04/designing-accessibility-inclusion/#lens-animation-effects). Most Flutter books and video courses cover animation, except animation accessibility.
   

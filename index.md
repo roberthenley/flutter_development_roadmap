@@ -112,7 +112,7 @@ By this point, you can create basic Flutter applications. Now move on to learn t
 
 
 * **Intermediate User Interfaces**
-  * [How the layout process works for all widgets](https://flutter.dev/docs/development/ui/layout/constraints) (required)
+  * [How the layout process works for all widgets](https://flutter.dev/docs/development/ui/layout/constraints) and [how to create your own custom layout widgets](https://hackernoon.com/how-to-create-custom-layout-widgets-in-flutter-d9419312a9bd) (required)
   * Displaying lists: [Dart Streams](https://api.dart.dev/stable/2.10.5/dart-async/Stream-class.html), [StreamBuilder](https://api.flutter.dev/flutter/widgets/StreamBuilder-class.html), and [ListView](https://api.flutter.dev/flutter/widgets/ListView-class.html) (required)
   * Responsive UI: Change layout by display size
       * [MediaQueryData](https://api.flutter.dev/flutter/widgets/MediaQueryData-class.html) display parameters (required)
@@ -129,7 +129,7 @@ By this point, you can create basic Flutter applications. Now move on to learn t
       * [Lottie](https://pub.dev/packages/lottie) (optional)
       * [Rive](https://rive.app/) (optional)
 
-  Learning how the layout process actually works is critical, and the [Understanding Constraints](https://flutter.dev/docs/development/ui/layout/constraints) documentation covers it best.
+  Learning how the layout process actually works is critical, and the [Understanding Constraints](https://flutter.dev/docs/development/ui/layout/constraints) documentation covers it best. You should also learn and practice creating custom layout widgets of your own; [this article](https://hackernoon.com/how-to-create-custom-layout-widgets-in-flutter-d9419312a9bd) is a good start.
   
   Most user interfaces also need lists, which are driven by [Dart Streams](https://api.dart.dev/stable/2.10.5/dart-async/Stream-class.html), [StreamBuilder](https://api.flutter.dev/flutter/widgets/StreamBuilder-class.html), and [ListView](https://api.flutter.dev/flutter/widgets/ListView-class.html). Most books and courses cover this.
   

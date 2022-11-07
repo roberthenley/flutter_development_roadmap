@@ -38,14 +38,14 @@ If you want to track your progress, I've created a [Flutter Development Study Ch
   * Dart basics: expressions, data types, identifiers and assignment, conditionals, basic looping. (required)
   * Objects: classes, properties, constructors, methods, and simple inheritance (required)
   * Functions: function declarations, positional parameters, named parameters, return values, callbacks (required)
-  * Null safety (eventually required)
+  * Null safety (required)
   * Code style (required)
   * Static analysis and linters, e.g. [extra\_pedantic](https://pub.dev/packages/extra_pedantic) package (eventually required)
   * Essential Dart Libraries: dart:core and dart:math (eventually required)
 
   This is the level of Dart knowledge that you'll get from a chapter in a Flutter introductory book, and it's all you'll need to get going. The [App Brewery course](https://www.udemy.com/course/flutter-bootcamp-with-dart/) introduces Dart language feature as they are needed for the sample applications being constructed and it will take you to the minimum level necessary. So would [_Flutter in Action_](https://www.manning.com/books/flutter-in-action).
   
-  Null safety in Dart is newer, but it is available in Flutter 2 as of March 3, 2021, and it is _essential_ to learn it; although, it's not taught in the introductory books or video courses as of this writing. See [Null safety in Flutter](https://flutter.dev/docs/null-safety).
+  Null safety in Dart is newer, but it became available in Flutter 2 as of March 3, 2021, and it is _essential_ to learn it; although, it's not taught in some older introductory books and video courses. See [Null safety in Flutter](https://flutter.dev/docs/null-safety) if your study materials omit the topic.
   
   The [Effective Dart](https://dart.dev/guides/language/effective-dart) section of the Flutter docs is your best resource about coding style. The IDEs will also help you adopt common coding conventions with warnings. You can enhance those warnings greatly with static analysis packages like [extra\_pedantic](https://pub.dev/packages/extra_pedantic).
 
@@ -135,7 +135,7 @@ By this point, you can create basic Flutter applications. Now move on to learn t
   
   More professional apps should also adapt to the display they run on and probably should adapt to the platform as well. But you won't find much about this in introductory courses or books. At least learn about [MediaQueryData](https://api.flutter.dev/flutter/widgets/MediaQueryData-class.html) and [LayoutBuilder](https://api.flutter.dev/flutter/widgets/LayoutBuilder-class.html).
   
-  [Animations](https://flutter.dev/docs/development/ui/animations) are also helpful for some applications -- and you need to know how MediaQueryData.disableAnimations tells your app not to animate, as well as [how flashing, blinking, and parallax motion can harm users](https://www.smashingmagazine.com/2018/04/designing-accessibility-inclusion/#lens-animation-effects). Most Flutter books and video courses cover animation, except animation accessibility.
+  [Animations](https://flutter.dev/docs/development/ui/animations) are also helpful for some applications -- and you need to know how MediaQueryData.disableAnimations tells your app not to animate, as well as [how flashing, blinking, and parallax motion can harm users](https://www.smashingmagazine.com/2018/04/designing-accessibility-inclusion/#lens-animation-effects). Most Flutter books and video courses cover animation, but not animation accessibility.
   
   
 * **Simple Persistence**
@@ -182,9 +182,9 @@ By this point, you can create basic Flutter applications. Now move on to learn t
   
   The BloC pattern is recommended by Google, especially in conjunction with the [Provider](https://pub.dev/packages/provider) state management package. (I liked WKCD's video series [BLoC - from zero to HERO](https://www.youtube.com/watch?v=w6XWjpBK4W8&list=PLptHs0ZDJKt_T-oNj_6Q98v-tBnVf-S_o&index=2) for training.) 
   
-  An alternative to using Provider is the [Riverpod](https://pub.dev/packages/riverpod) package from the same author, which was designed to address Provider's defects (such as type safety); it is considered an experiment, but I've heard good reports about it.
+  An alternative to using Provider is the [Riverpod](https://pub.dev/packages/riverpod) package from the same author, which was designed to address Provider's defects (such as type safety); it is considered an experiment, but I've heard very good reports about it.
   
-  [Redux](https://pub.dev/packages/redux) and [MobX](https://pub.dev/packages/mobx) come out of the React web community and remain popular and powerful, so although using them is optional, it's good to know what they are and what they can do. Ditto the MV* architectures: while they are less used in Flutter, people talk about them often as points of comparison.
+  [Redux](https://pub.dev/packages/redux) and [MobX](https://pub.dev/packages/mobx) come out of the React web community and remain popular and powerful, so although knowing how to code with them is optional, it's good to know what they are and what they can do. Ditto the MV* architectures: while they are less used in Flutter, people talk about them often as points of comparison.
 
 
 * **Testing**
@@ -196,7 +196,7 @@ By this point, you can create basic Flutter applications. Now move on to learn t
   * Behavior-Driven Development (BDD) and the [gherkin](https://pub.dev/packages/gherkin) package (for Dart), and/or the [bdd\_widget\_test](https://pub.dev/packages/bdd_widget_test) or [flutter\_gherkin](https://pub.dev/packages/flutter_gherkin) packages (for Flutter) (helpful)
   *	 Test-Driven Development (TDD) (helpful)
 
-  The subject of testing is critical, and could easily be introduced earlier in training -- right after basic Dart, in fact. But that's not how most courses are structured, and it does help to have architectural patterns that seperate concerns in place first, because they make the app more testable. [_Flutter in Action_](https://www.manning.com/books/flutter-in-action) covers testing somewhat. The integration\_test package is new; see [Updates on Flutter Testing](https://medium.com/flutter/updates-on-flutter-testing-f54aa9f74c7e).
+  The subject of testing is critical, and could easily be introduced earlier in training -- right after basic Dart, in fact. But that's not how most courses are structured, and it does help to have architectural patterns that seperate concerns in place first, because they make the app more testable. [_Flutter in Action_](https://www.manning.com/books/flutter-in-action) covers testing somewhat. The integration\_test package is newer, but highly recommended; see [Updates on Flutter Testing](https://medium.com/flutter/updates-on-flutter-testing-f54aa9f74c7e).
 
 You can now build complex Flutters applications, but not quite professional-grade ones.
 
@@ -223,7 +223,7 @@ You can now build complex Flutters applications, but not quite professional-grad
   
   Internationalization is covered in the [Flutter docs](https://flutter.dev/docs/development/accessibility-and-localization/internationalization). 
   
-  Digital accessibility for the disabled is a large topic in itself, but it's both the right thing to do and a legal requirement for apps in major markets. Accessibility is most often taught for the web; start with this [W3C introductory course](https://www.edx.org/course/web-accessibility-introduction) for background, then apply what you've learned using these [Flutter docs](https://flutter.dev/docs/development/accessibility-and-localization/accessibility). This list of [accessibility guideline suggestions](https://theappbusiness.github.io/accessibility-guidelines/) may help, as it includes guidance for Flutter, but it's incomplete.
+  Digital accessibility for the people with disabilities is a large topic in itself, but it's both the right thing to do and a legal requirement for apps in major markets. Accessibility is most often taught for the web; start with this [W3C introductory course](https://www.edx.org/course/web-accessibility-introduction) for background, then apply what you've learned using these [Flutter docs](https://flutter.dev/docs/development/accessibility-and-localization/accessibility). This list of [accessibility guideline suggestions](https://theappbusiness.github.io/accessibility-guidelines/) may help, as it includes guidance for Flutter, but it's incomplete.
 
 
 * **Advanced Dart**
@@ -251,13 +251,13 @@ You can now build complex Flutters applications, but not quite professional-grad
 
   Flutter web development is not greatly different from Flutter mobile app development. You will need to place a greater emphasis on responsive layouts, because web form factors differ more than pure mobile apps. Web development is actually an option from the beginning of your development journey, but there are limitations to Flutter web (e.g., no hot reload) and the relative immaturity of the technology that make me categorize it as an advanced topic.
 
-* **Flutter Desktop** (optional -- in Beta)
+* **Flutter Desktop** (optional)
   * See [https://flutter.dev/desktop](https://flutter.dev/desktop) for details
   * Desktop platform development tools, e.g. Visual Studio for Windows, XCode for Mac, and various command line tools for Linux (required for this option)
   * Use only [pub.dev](https://pub.dev) packages enabled for the selected desktop platform(s)
   * Learn appropriate platform UI guidelines and accessibility standards
 
-  Flutter can also be used to create desktop native applications for Windows, Mac, and Linux. This is Beta-quality software, but available for you to play with. YMMV.
+  Flutter can also be used to create desktop native applications for Windows, Mac, and Linux. Flutter Desktop is even less mature than Flutter Web, and that maturity level varies by platform, so YMMV.
 
 * **Plug-ins** (eventually required)
   * Native Platform APIs:
